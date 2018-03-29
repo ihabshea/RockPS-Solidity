@@ -43,20 +43,20 @@ contract RSP {
         if(players[player1].move > 0 && players[player2].move > 0){
             if(players[player1].move == 1 && players[player2].move == 3){
                 player1.transfer(bet*2);
-                return "Player 1 won ya kossomak.";
+                return "Player 1.";
             }else if(players[player1].move == 2 && players[player2].move == 1){
                 player1.transfer(bet*2);
-                return "Player 1 won ya kossomak.";
+                return "Player 1.";
             }else if(players[player1].move == 3 && players[player2].move == 2){
                 player1.transfer(bet*2);
-                return "Player 1 won ya kossomak.";
+                return "Player 1 won.";
             }else if(players[player1].move == players[player2].move){
                 player1.transfer(bet);
                 player2.transfer(bet);
                 return "Draw";  
             }else{
                 player2.transfer(bet*2);
-                return "Player 2 won ya kossomak.";
+                return "Player 2 won ya .";
             }
             //Reset
             players[player1] = Player(true, "", false, 0);
